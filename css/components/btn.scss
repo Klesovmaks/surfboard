@@ -1,0 +1,14 @@
+.btn {
+  font-size: 19px;
+  font-weight: 700;
+  padding: 21px 41px; 
+  text-transform: uppercase;
+  border-radius: 100px;  
+  line-height: 1;
+  text-decoration: none;
+
+  &--theme--yellow {
+    background: #FEDB3F;
+    color: #000000;
+  }
+}

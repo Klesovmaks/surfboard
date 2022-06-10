@@ -1,0 +1,19 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//colors
+
+
+//normalize
+@import url("./components/normalize.css");
+
+//setups
+@import "layout";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap");
+
+//components
+@import "./components/hero.scss";
+@import "./components/header.scss";
+@import "./components/features.scss";
+@import "./components/feature.scss";
+@import "./components/btn.scss";
