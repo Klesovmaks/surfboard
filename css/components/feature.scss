@@ -3,9 +3,10 @@
 }
 
 .feature__icon {
-  height: 35px;
-  width: 35px;
   margin-right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature__text {

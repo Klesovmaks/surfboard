@@ -1,0 +1,28 @@
+.interective-avatar {
+  width: 72px;
+  height: 72px;
+  border: 6px solid #FEDB3F;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+    &--active {
+      border: 6px solid #FEDB3F;
+    }
+}
+
+.interective-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interective-avatar__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
