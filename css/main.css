@@ -84,7 +84,6 @@ img {
 .hero {
   background: url("../../img/bgtop.png") center top no-repeat;
   background-size: cover;
-  background-color: #1968B1;
   height: 100vh;
   min-height: 650px;
   color: #FFFFFF;
@@ -447,7 +446,6 @@ img {
 .order-section {
   background: url("./../../img/order/bg.jpg") top 25% center no-repeat;
   background-size: cover;
-  background-color: #1968B1;
 }
 
 .form {
