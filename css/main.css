@@ -82,7 +82,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/bgtop.png") center top no-repeat;
+  background: url("../../../img/bgtop.png") center top no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 650px;
@@ -444,7 +444,7 @@ img {
 }
 
 .order-section {
-  background: url("./../../img/order/bg.jpg") top 25% center no-repeat;
+  background: url("../../../img/order/bg.jpg") top 25% center no-repeat;
   background-size: cover;
 }
 
