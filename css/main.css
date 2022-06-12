@@ -82,7 +82,7 @@ img {
 }
 
 .hero {
-  background: url("../../../img/bgtop.png") center top no-repeat;
+  background: url("../img/bgtop.png") center top no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 650px;
@@ -298,7 +298,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../../img/decor/separator.png");
+  content: url("../img/decor/separator.png");
   position: absolute;
   top: 50px;
   right: 0;
@@ -444,7 +444,7 @@ img {
 }
 
 .order-section {
-  background: url("../../../img/order/bg.jpg") top 25% center no-repeat;
+  background: url("../img/order/bg.jpg") top 25% center no-repeat;
   background-size: cover;
 }
 
