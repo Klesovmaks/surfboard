@@ -445,7 +445,7 @@ img {
 }
 
 .order-section {
-  background: url("../../img/order/bg.jpg") top 25% center no-repeat;
+  background: url("./../../img/order/bg.jpg") top 25% center no-repeat;
   background-size: cover;
   background-color: #1968B1;
 }
