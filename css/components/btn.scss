@@ -1,9 +1,9 @@
 .btn {
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: 700;
-  padding: 21px 41px; 
+  padding: rem(21px) rem(41px); 
   text-transform: uppercase;
-  border-radius: 100px;  
+  border-radius: rem(100px);  
   line-height: 1;
   text-decoration: none;
   border: none;
@@ -21,7 +21,7 @@
     background: transparent;
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 18px;
+    font-size: rem(18px);
     text-transform: none;
 
     &:hover {

@@ -1,36 +1,92 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+
+  @include tablets {
+    background: #1968B1;
+    height: 91px;
+    align-items: center;
+  }
+}
+
+.menu {
+  margin: 0 30px;
+  padding-top: 7px;
+  @include tablets {
+    display: none;
+  }
 }
 
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu__item {
-  margin-right: 20px;
+  margin-right: rem(20px);
   font-weight: 700;
+  margin-bottom: 10px;
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
 
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .phone-number {
-  font-size: 24px;
+  font-size: rem(24px);
   text-decoration: none;
   display: flex;
   align-items: center;
   font-weight: 700;
 }
 
+.phone-number__text {
+  white-space: nowrap;
+}
+
+.header__phone-number {
+  
+  @include tablets {
+    display: none;
+  }
+}
+
+.footer__phone-number {
+  font-weight: 400;
+  font-size: rem(21px);
+  color: #292929;
+}
+
 .phone-number__icon {
-  width: 13px;
-  height: 13px;
-  margin-right: 6px;
+  width: rem(13px);
+  height: rem(13px);
+  margin-right: rem(6px);
+  flex-shrink: 0;
+}
+
+.logo {
+  @include tablets {
+    margin-left: rem(30px);
+  }
+
+  @include phones {
+    margin-left: rem(10px);
+  }
+}
+
+.phone__icon {
+  width: rem(13px);
+  height: rem(13px);
+  color: #FFFFFF;
+  margin-right: rem(5px);
+
+  &--dark {
+    color: #292929;
+  }
 }

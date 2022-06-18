@@ -1,0 +1,54 @@
+.footer {
+  height: rem(90px);
+  position: relative;
+
+  @include phones {
+    height: rem(150px);
+  }
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.contact__info {
+  margin: rem(20px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.addres {
+  font-weight: 400;
+  font-size: rem(21px);
+  color: #292929;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  color: #B3B3B3;
+  transition: 0.3s;
+
+  &:hover {
+    color: #292929;
+  }
+}
+
+.social__item {
+  margin-right: rem(13px);
+
+  &:last-child{
+    margin-right: 0;
+  }
+}

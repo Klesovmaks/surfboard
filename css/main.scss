@@ -1,6 +1,13 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "./components/media.scss";
+
 //colors
 
 
@@ -26,3 +33,7 @@ $baseFontSize: 18px;
 @import "./components/order.scss";
 @import "./components/form.scss";
 @import "./components/radio.scss";
+@import "./components/hamburger.scss";
+@import "./components/contact.scss";
+@import "./components/footer.scss";
+@import "./components/slider.scss";

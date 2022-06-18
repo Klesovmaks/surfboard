@@ -3,9 +3,9 @@
 }
 
 .features__item {
-  margin-right: 34px;
+  margin-right: rem(34px);
   font-weight: 700;
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }

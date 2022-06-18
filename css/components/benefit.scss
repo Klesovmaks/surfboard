@@ -1,12 +1,16 @@
 .benefit {
   text-align: center;
 
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -23,10 +27,20 @@
 .benefit__title {
   color: #292929;
   font-weight: 700;
-  font-size: 27px;
-  margin-bottom: 20px;  
+  font-size: rem(27px);
+  margin-bottom: rem(20px);  
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 }
 
 .benefit__img {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+}
+
+.benefit__text {
+  @include phones {
+    margin-left: rem(12px);
+  }
 }

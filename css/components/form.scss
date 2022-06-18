@@ -1,55 +1,87 @@
 .form {
   display: flex;
+  
+  @include tablets {
+    flex-direction: column;
+    padding: 0 20%;
+  }
+
+  @include phones {
+    padding: 0 2%;
+  }
 }
 
 .form__col {
   flex: 1;
-  margin-right: 27px;
+  margin-right: rem(27px);
 
   &:last-child {
+    margin-right: rem(0px);
+  }
+
+  @include tablets {
     margin-right: 0px;
   }
 }
 
 .form__row {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: rem(12px);
 }
 
 .form__block {
   flex: 1;
-  margin-right: 17px;
+  margin-right: rem(17px);
 
   &:last-child{
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
 
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 11px;
-  border: solid 3px transparent;
-  border-radius: 4px;
+  padding: rem(18px) rem(11px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(4px);
 
   &--textarea {
-    height: 162px;
+    height: rem(162px);
     resize: none;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
   }
 
   &:focus {
     border-color: #FEDB3F;
     outline: none;
   }
+
+  @include tablets {
+    padding: rem(8px) rem(11px);
+
+    &--textarea {
+      height: rem(82px);
+    }
+  }
 }
 
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__title {
   font-weight: 400;
   color: #FFFFFF;
+}
+
+.form__btns {
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
 }

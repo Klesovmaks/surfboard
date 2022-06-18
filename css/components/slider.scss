@@ -1,0 +1,53 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: rem(200px);
+  left: rem(50px);
+  
+  @include tablets {
+    display: none;
+  }
+}
+.radio-slider {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: rem(15px);
+
+  &:last-child {
+    margin-bottom: rem(0px);
+  }
+}
+
+.radio-slider__elem {
+  display: none;
+  &:checked ~ .radio-slider__visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.radio-slider__visible {
+  width: rem(7px);
+  height: rem(7px);
+  position: relative;
+  border-radius: 50%;
+  background: #FFFFFF;
+
+  &:before {
+    content: "";
+    display: none;
+    width: rem(14px);
+    height: rem(14px);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
