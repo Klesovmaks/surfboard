@@ -123,6 +123,7 @@ img {
 
 .hero__title-section {
   width: 46%;
+  margin-top: 5.5555555556rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
@@ -211,6 +212,39 @@ img {
   .hero__icons-section {
     display: none;
   }
+}
+
+.hero__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__col-flex-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero__content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header {
@@ -889,7 +923,7 @@ img {
 }
 
 .contact-section {
-  background: url("../../img/map.png") center center no-repeat;
+  background: url("../img/map.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -973,12 +1007,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: relative;
-  bottom: 11.1111111111rem;
-  left: 2.7777777778rem;
+  margin-top: 8.3333333333rem;
 }
 @media screen and (max-width: 768px) {
   .slider {
