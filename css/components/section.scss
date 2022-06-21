@@ -16,4 +16,12 @@
   &--white {
     color: #FFFFFF;
   }
+
+  @include tablets {
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    margin-bottom: rem(30px);
+  }
 }

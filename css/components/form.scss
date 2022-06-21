@@ -49,6 +49,10 @@
     height: rem(162px);
     resize: none;
     margin-bottom: rem(20px);
+
+    @include tablets {
+      margin-bottom: rem(10px);
+    }
   }
 
   &:focus {
@@ -83,5 +87,6 @@
   @include tablets {
     display: flex;
     justify-content: center;
+    margin-top: rem(20px) !important;
   }
 }

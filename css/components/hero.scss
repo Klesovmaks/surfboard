@@ -7,11 +7,13 @@
   filter: drop-shadow(rem(0px) rem(4px) rem(4px) rgba(0, 0, 0, 0.25));
 
   @include tablets {
-    background: url("../img/bgtop.png") right bottom no-repeat;
+    background: url("../img/bgtop.png") right rem(100px) no-repeat;
+    background-size: cover;
   }
 
   @include phones {
-    background: url("../img/bgtop.png") right 15% bottom no-repeat;
+    background: url("../img/bgtop.png") 85% rem(100px) no-repeat;
+    background-size: cover;
   }
 }
 

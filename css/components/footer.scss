@@ -52,3 +52,10 @@
     margin-right: 0;
   }
 }
+
+.phone {
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
+}
