@@ -1,0 +1,44 @@
+.product {
+  display: flex;
+  padding: 0 rem(30px);
+}
+
+.product__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.product_link {
+  display: block;
+}
+
+.product__link--square {
+  width: 91px;
+  height: 91px;
+  background: #3A587E;
+  border-radius: 4px;
+}
+
+.product__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  color: #292929;
+  font-weight: 700;
+  font-size: rem(36px);
+  margin-bottom: rem(25px);
+}
+
+.product__desc {
+  color: #666666;
+  font-weight: 400;
+  font-size: rem(18px);
+}
+
+.product__img {
+  width: rem(150px);
+  height: rem(530px);
+}

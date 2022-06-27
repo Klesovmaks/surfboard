@@ -18,6 +18,18 @@
   }
 }
 
+.active {
+  .menu {
+    @include tablets {
+      display: block;
+    }
+
+    @include phones {
+      display: block;
+    }
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -36,6 +48,37 @@
 .menu__link {
   text-decoration: none;
   white-space: nowrap;
+}
+
+.menu--vertical {
+  font-size: rem(36px);
+  line-height: rem(72px);
+  color: #FFFFFF;
+  justify-content: center;
+  display: flex;
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu__item {
+    font-weight: 400;
+    margin-right: 0;
+  }
+}
+
+.fullscreen-menu {
+  display: none;
+  background: #333537;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .phone-number {

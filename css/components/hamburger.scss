@@ -1,6 +1,6 @@
 .hamburger {
-  width: 24px;
-  height: 20px;
+  width: rem(24px);
+  height: rem(20px);
   flex-direction: column;
   justify-content: space-between;
   margin-right: rem(30px);
@@ -18,6 +18,40 @@
 .hamburger__plank {
   display: block;
   background: #FFFFFF;
-  height: 4px;
-  border-radius: 10px;
+  height: rem(4px);
+  border-radius: rem(10px);
+}
+
+.close-modal {
+	position: absolute;
+	top: rem(30px);
+	right: rem(20px);
+	width: rem(24px);
+	height: rem(24px);
+	opacity: 0.5;
+  transition: opacity ease 0.5s;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.close-modal::before,
+.close-modal::after {
+	content: '';
+	position: absolute;
+	top: rem(5px);
+	display: block;
+	width: rem(20px);
+	height: rem(4px);
+	background: #FFFFFF;
+  border-radius: rem(2px);
+}
+
+.close-modal::before {
+	transform: rotate(45deg);
+}
+
+.close-modal::after {
+	transform: rotate(-45deg);
 }
