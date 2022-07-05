@@ -1542,7 +1542,7 @@ img {
 .team__title::after {
   margin-left: 0.2777777778rem;
   margin-bottom: 0.2777777778rem;
-  content: url("../../img/icons/arrowSprite.svg");
+  content: url("../img/icons/arrowSprite.svg");
 }
 .team__occ {
   font-size: 1rem;
