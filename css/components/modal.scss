@@ -1,0 +1,30 @@
+.modal {
+  display: none;
+
+  &.error-modal {
+    .modal__content {
+      color: red;
+    }
+  }
+  
+  &.fancybox-content {
+    padding: 0 !important;
+  }
+
+  &__container {
+    background: #fff;
+    padding: 35px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    margin-bottom: rem(40px);
+    font-size: rem(18px);
+    font-weight: 500;
+    color: #000000;
+
+    
+  }
+}

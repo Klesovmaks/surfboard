@@ -60,7 +60,6 @@
 
   &:hover {
     .product__menu--dropdown {
-      opacity: 0.8;
       left: rem(560px);
       bottom: rem(246px);
     }
@@ -72,10 +71,9 @@
   width: rem(270px);
   height: rem(290px);
   background-color: rgba(255, 255, 255, 0.8);
-  opacity: 0;
   transition: opacity .3s;
   left: 3000000px;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(3px);
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
   border-radius: rem(4px);
 }
