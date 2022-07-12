@@ -16,8 +16,10 @@ function changeDisplayMenu() {
   let menuDisplay = getComputedStyle(fullScreenMenu).display;
 
   if (menuDisplay === "none") {
+    document.body.style.overflowY = "hidden";
     fullScreenMenu.style.display = "flex";
   } else {
+    document.body.style.overflowY = "visible";
     fullScreenMenu.style.display = "none";
   }
 }

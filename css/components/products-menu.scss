@@ -1,0 +1,110 @@
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+
+  &__title {
+    display: block;
+    background-color:rgba(0,0,0,1);
+    position: relative;
+    width: 100px;
+
+    @include tablets {
+      width: 90px;
+    }
+  }
+
+  &-section {
+    justify-content: flex-start;
+    background: linear-gradient( rgba(0, 0, 0, 0.3) ), url("../img/products-menu/menu.jpg") center center no-repeat;
+    position: relative;
+    color: #fff;
+
+    &__title {
+      margin-top: 100px;
+      margin-left: 90px;
+      color: #fff;
+      text-align: left;
+
+      @include tablets {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__content {
+    background: rgba(47, 50, 52, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+  }
+
+  &__container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 80px 0 38px;
+
+    @include tablets {
+      padding: 30px 10px 0 10px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    width: 24px;
+    height: 24px;
+    opacity: 0.2;
+    cursor: pointer;
+    background: transparent;
+    
+    &:hover {
+      opacity: 1;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      display: block;
+      width: 24px;
+      height: 3px;
+      background: #fff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__img {
+    opacity: 50%;
+    max-width: 100px;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  &__text {
+    margin-top: -100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    transform: rotate(-90deg);
+  }
+}

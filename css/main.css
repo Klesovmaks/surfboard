@@ -6,12 +6,12 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 3vmin;
   }
 }
 
@@ -96,23 +96,21 @@ img {
   max-height: 100%;
 }
 
-.hero {
+.hero-section {
   background: url("../img/bgtop.png") center top no-repeat;
   background-size: cover;
-  height: 100vh;
-  min-height: 36.1111111111rem;
   color: #FFFFFF;
   -webkit-filter: drop-shadow(0rem 0.2222222222rem 0.2222222222rem rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0rem 0.2222222222rem 0.2222222222rem rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 768px) {
-  .hero {
+  .hero-section {
     background: url("../img/bgtop.png") right 5.5555555556rem no-repeat;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
-  .hero {
+  .hero-section {
     background: url("../img/bgtop.png") 85% 5.5555555556rem no-repeat;
     background-size: cover;
   }
@@ -360,6 +358,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.overflow.body {
+  position: fixed;
+  overflow: hidden;
 }
 
 .phone-number {
@@ -1475,24 +1478,28 @@ img {
 }
 
 .product-slider__arrow {
-  background: url("../img/icons/sliderR.svg") center center no-repeat;
+  background: url("../img/icons/slider.svg") center center no-repeat;
   background-size: contain;
   display: block;
   width: 0.7222222222rem;
   height: 1.6111111111rem;
   position: absolute;
-  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .product-slider__arrow {
+    top: 25%;
+  }
 }
 .product-slider__arrow--direction--prev {
   right: 0;
 }
 .product-slider__arrow--direction--next {
   left: 0;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .team {
@@ -1819,4 +1826,116 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 0;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-menu__title {
+  display: block;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  width: 100px;
+}
+@media screen and (max-width: 768px) {
+  .products-menu__title {
+    width: 90px;
+  }
+}
+.products-menu-section {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../img/products-menu/menu.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/products-menu/menu.jpg") center center no-repeat;
+  position: relative;
+  color: #fff;
+}
+.products-menu-section__title {
+  margin-top: 100px;
+  margin-left: 90px;
+  color: #fff;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .products-menu-section__title {
+    margin-left: 10px;
+  }
+}
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+.products-menu__container {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 30px 80px 0 38px;
+}
+@media screen and (max-width: 768px) {
+  .products-menu__container {
+    padding: 30px 10px 0 10px;
+  }
+}
+.products-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  opacity: 0.2;
+  cursor: pointer;
+  background: transparent;
+}
+.products-menu__close:hover {
+  opacity: 1;
+}
+.products-menu__close::before, .products-menu__close::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #fff;
+}
+.products-menu__close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.products-menu__close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-menu__img {
+  opacity: 50%;
+  max-width: 100px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products-menu__text {
+  margin-top: -100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
